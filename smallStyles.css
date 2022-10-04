@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --fontJosefin: 'Josefin Sans', sans-serif;
+    --titleLetterRed: hsl(0, 36%, 70%);
+    --textLetterRed: hsl(0, 93%, 68%);
+    --backgroundImage: url("./images/bg-pattern-desktop.svg");
+    --backgroundButton: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+    --backgroundButtonActive: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 74%, 74%) 100%);
+    --errorColor: rgb(228, 20, 20);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-width: 540px;
+    height: 820px;
+    background-image: var(--backgroundImage);
+}
+
+#text {
+
+    font-family: var(--fontJosefin);
+    padding: 50px;
+}
+
+#mainLogo {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 40px;
+
+}
+
+#heroMobile {
+    display: block;
+}
+
+#heroDesktop {
+    display: none;
+}
+
+#weareComingSoon {
+    max-width: 375px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    margin-bottom: 30px;
+}
+
+#weare {
+    color: var(--titleLetterRed);
+    font-weight: 300;
+}
+
+#message {
+    color: var(--textLetterRed);
+    margin-bottom: 30px;
+
+}
+
+#inputEmail {
+    max-width: 400px;
+}
+
+#Email {
+    border-radius: 25px;
+    min-width: 290px;
+    padding: 20px;
+    position: sticky;
+}
+
+
+#buttonEmail {
+    width: 90px;
+    height: 60px;
+    border-radius: 25px;
+    position: absolute;
+    left: 250px;
+    z-index: 10;
+    background: var(--backgroundButton);
+    border: none;
+    box-shadow: 5px 5px 70px 5px var(--titleLetterRed);
+    filter: blur(--titleLetterRed);
+
+}
+
+@keyframes slide {
+    from {
+        left: 250px;
+    }
+
+    to {
+        left: 260px;
+    }
+}
+
+#buttonEmail:active {
+    cursor: pointer;
+    background: var(--backgroundButtonActive);
+    box-shadow: 5px 5px 50px 5px var(--titleLetterRed);
+    animation-name: slide;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+
+}
+
+#exclamationMark {
+    visibility: hidden;
+    position: absolute;
+    left: 220px;
+    bottom: -25px;
+    z-index: 11;
+
+}
+
+#warning {
+    visibility: hidden;
+    color: var(--errorColor);
+    padding: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

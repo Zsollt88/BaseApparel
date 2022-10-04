@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" media="screen and (min-width:577px)" href="wideStyles.css">
+  <link rel="stylesheet" media="screen and (max-width:576px)" href="smallStyles.css">
+</head>
+
+<body>
+
+  <main>
+
+    <section id="text">
+      <img src="./images/logo.svg" id="mainLogo" alt="Logo" title="Logo">
+      <img src="./images/hero-mobile.jpg" id="heroMobile" title="mobilePicture">
+      <p id="weareComingSoon">
+        <span id="weare">We're</span>
+        coming<br>
+        soon<br>
+      </p>
+
+      <p id="message">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <div id="inputEmail">
+        <input type="email" id="Email" placeholder="Email Address"><img src="./images/icon-error.svg"
+          id="exclamationMark" alt="error" title="error">
+        <button type="button" id="buttonEmail" onclick="emailValidator()"><img src="./images/icon-arrow.svg"
+            alt="icon-arrow" title="icon-arrow"></button></input>
+        <p id="warning">Please provide a valid e-mail</p>
+      </div>
+    </section>
+    <img src="./images/hero-desktop.jpg" id="heroDesktop" alt="mainPic" title="mainPic">
+
+  </main>
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/zsolt-nagy-43871b247/" target="_blank">Zsolt Nagy</a>.
+    </p>
+  </footer>
+  <script src="apparelButton.js"></script>
+</body>
+
+</html>
